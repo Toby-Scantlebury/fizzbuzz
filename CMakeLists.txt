@@ -4,6 +4,9 @@ project(fizzbuzz LANGUAGES CXX)
 include(CTest)
 
 foreach(step RANGE 1 23)
+    if(step LESS 10)
+        set(step "0${step}")
+    endif()
     add_executable(fizzbuzz_${step} fizzbuzz_${step}.cpp)
     set_target_properties(fizzbuzz_${step} PROPERTIES
         CXX_STANDARD 20

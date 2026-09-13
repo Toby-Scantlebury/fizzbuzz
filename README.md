@@ -23,15 +23,15 @@ Read in numerical order; the repetition is intentional.
 
 | Step | New abstraction / responsibility |
 | --- | --- |
-| [1](fizzbuzz_1.cpp) | Nested divisibility tests in main |
-| [2](fizzbuzz_2.cpp) | A single ordered if-else chain |
-| [3](fizzbuzz_3.cpp) | Name the two independent conditions |
-| [4](fizzbuzz_4.cpp) | Extract the complete operation |
-| [5](fizzbuzz_5.cpp) | Separate value calculation from iteration and output |
-| [6](fizzbuzz_6.cpp) | Inject the output stream and retain a stdout convenience function |
-| [7](fizzbuzz_7.cpp) | Let the caller choose the sequence length |
-| [8](fizzbuzz_8.cpp) | Inject the value-producing operation |
-| [9](fizzbuzz_9.cpp) | Materialize values independently of their consumer |
+| [1](fizzbuzz_01.cpp) | Nested divisibility tests in main |
+| [2](fizzbuzz_02.cpp) | A single ordered if-else chain |
+| [3](fizzbuzz_03.cpp) | Name the two independent conditions |
+| [4](fizzbuzz_04.cpp) | Extract the complete operation |
+| [5](fizzbuzz_05.cpp) | Separate value calculation from iteration and output |
+| [6](fizzbuzz_06.cpp) | Inject the output stream and retain a stdout convenience function |
+| [7](fizzbuzz_07.cpp) | Let the caller choose the sequence length |
+| [8](fizzbuzz_08.cpp) | Inject the value-producing operation |
+| [9](fizzbuzz_09.cpp) | Materialize values independently of their consumer |
 | [10](fizzbuzz_10.cpp) | Consume any input range rather than a particular container |
 | [11](fizzbuzz_11.cpp) | Replace eager storage with a bounded lazy transform |
 | [12](fizzbuzz_12.cpp) | Separate sequence generation from prefix selection |
