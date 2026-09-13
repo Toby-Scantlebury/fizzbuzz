@@ -1,0 +1,10 @@
+execute_process(COMMAND "${PROGRAM}"
+    RESULT_VARIABLE status OUTPUT_VARIABLE actual ERROR_VARIABLE error)
+if(NOT status EQUAL 0)
+    message(FATAL_ERROR "${PROGRAM} failed (${status}): ${error}")
+endif()
+set(expected "1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzbuzz\n16\n17\nFizz\n19\nBuzz\n")
+string(REPLACE "\r\n" "\n" actual "${actual}")
+if(NOT actual STREQUAL expected)
+    message(FATAL_ERROR "${PROGRAM}: unexpected output:\n${actual}")
+endif()
